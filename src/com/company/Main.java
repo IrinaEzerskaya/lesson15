@@ -24,6 +24,10 @@ public class Main {
         System.out.println("Кол-во товара item 2 после обновления");
         System.out.println(myShopBasket.getProductQuantity("item 2"));
 
+        myShopBasket.removeProduct("item 2");
+        System.out.println("Удалили item 2");
+        System.out.println(myShopBasket.getProducts());
+
         System.out.println("Кол-во товаров после очистки корзины");
         myShopBasket.clear();
         System.out.println(myShopBasket.getProducts());
